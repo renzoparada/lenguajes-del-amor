@@ -1,0 +1,38 @@
+// Prisma schema - Test de los 5 Lenguajes del Amor
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum LoveLanguage {
+  WORDS_OF_AFFIRMATION
+  QUALITY_TIME
+  RECEIVING_GIFTS
+  ACTS_OF_SERVICE
+  PHYSICAL_TOUCH
+}
+
+model LoveLanguageResult {
+  id       String @id @default(cuid())
+  name     String
+  email    String
+
+  wordsOfAffirmationScore Int
+  qualityTimeScore        Int
+  receivingGiftsScore     Int
+  actsOfServiceScore      Int
+  physicalTouchScore      Int
+
+  primaryLanguage   LoveLanguage
+  secondaryLanguage LoveLanguage
+
+  emailSent Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
