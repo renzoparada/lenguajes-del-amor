@@ -92,7 +92,7 @@ export async function generateLoveLanguagePdf({ name, scores, percentages, creat
       width: logoWidth,
       height: logoHeight,
     });
-    y -= logoHeight + 16;
+    y -= logoHeight + 32;
   }
 
   page.drawText("Los 5 Lenguajes del Amor", {
@@ -260,16 +260,9 @@ export async function generateLoveLanguagePdf({ name, scores, percentages, creat
     page.drawImage(signature, { x: MARGIN, y: footerY - 12, width: sigWidth, height: sigHeight });
   }
 
-  page.drawText("Renzo Parada", {
-    x: MARGIN,
-    y: footerY - 22,
-    size: 10,
-    font: fontBold,
-    color: rgb(0.2, 0.2, 0.25),
-  });
   page.drawText("Emprendedores Makeover", {
     x: MARGIN,
-    y: footerY - 34,
+    y: footerY - 26,
     size: 9,
     font: fontRegular,
     color: rgb(0.45, 0.45, 0.5),
@@ -278,7 +271,7 @@ export async function generateLoveLanguagePdf({ name, scores, percentages, creat
   const footerNote = "Este resultado es orientativo y está inspirado en el marco de Los 5 Lenguajes del Amor de Gary Chapman.";
   page.drawText(footerNote, {
     x: PAGE_WIDTH - MARGIN - fontRegular.widthOfTextAtSize(footerNote, 8),
-    y: footerY - 34,
+    y: footerY - 26,
     size: 8,
     font: fontRegular,
     color: rgb(0.55, 0.55, 0.6),

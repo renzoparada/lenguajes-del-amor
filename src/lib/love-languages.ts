@@ -36,7 +36,7 @@ export const LOVE_LANGUAGE_LABEL: Record<LoveLanguageKey, string> = {
   qualityTime: "Tiempo de Calidad",
   receivingGifts: "Regalos",
   actsOfService: "Actos de Servicio",
-  physicalTouch: "Contacto Físico",
+  physicalTouch: "Toque Físico",
 };
 
 export const LOVE_LANGUAGE_COLOR: Record<LoveLanguageKey, string> = {
@@ -78,7 +78,7 @@ export const LOVE_LANGUAGE_INTERPRETATION: Record<LoveLanguageKey, { meaning: st
   },
   physicalTouch: {
     meaning:
-      "Tu lenguaje principal es Contacto Físico. La cercanía corporal (un abrazo, tomarse de la mano, un gesto de apoyo físico) es, para vos, una de las formas más directas de sentirte querido/a y seguro/a en un vínculo. Su ausencia puede sentirse como distancia emocional, incluso si no lo es.",
+      "Tu lenguaje principal es Toque Físico. La cercanía corporal (un abrazo, tomarse de la mano, un gesto de apoyo físico) es, para vos, una de las formas más directas de sentirte querido/a y seguro/a en un vínculo. Su ausencia puede sentirse como distancia emocional, incluso si no lo es.",
     tip: "Buscá momentos naturales de contacto físico apropiado en tu día a día y comunicá con confianza cuánto valorás esos gestos: para muchas personas no es algo obvio y agradecen que se lo digan.",
   },
 };
